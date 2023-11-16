@@ -1,13 +1,116 @@
 body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
+    background-image: url('../public/weather.webp');
+    background-size:100%;
+    font-family: 'Montserrat', sans-serif;
+    margin-top: 50px;
+    margin-left: 100px;
+    margin-right: 100px;
+  }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
-}
+  h2{
+    font-size: 30px;
+    color: white;
+    opacity: 0.5;
+  }
+
+  input, button {
+    height: 30px;
+    box-sizing: border-box;
+  }
+
+  #input:focus{
+    opacity: 1;
+  }
+
+  #input{
+    height: 35px;
+    background: transparent;
+    width: 30%;
+    border: white solid 1px;
+    opacity: 0.6;
+    border-radius: 16px;
+    color: white;
+    padding-left: 15px;
+  }
+
+  #input::placeholder{
+    color: white;
+  }
+
+  #input-btn {
+    height: 35px;
+    width: 10%;
+    border-radius: 16px;
+    background-color: transparent;
+    border-color: whitesmoke;
+    opacity: 0.6;
+    color: white;
+    margin-left: 5px;
+  }
+
+  #input-btn:hover{
+    opacity: 1;
+    cursor: pointer;
+  }
+
+  #card{
+    height: 180px;
+    width: 140px;
+    border-radius: 10px;
+    padding: 20px;
+    background-color: transparent;
+    border: 1px solid white;
+    color: white;
+    position: relative;
+    box-shadow: 2px 1px 20px 1px rgb(130, 130, 130);
+  }
+
+  #cards-grid{
+    margin-top: 30px;
+    display: grid;
+    grid-template-columns: auto auto auto auto auto;
+    justify-content: space-around;
+    gap: 20px;
+  }
+
+  #city-name{
+    font-size: 20px;
+  }
+
+  #card-des{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+  }
+
+  #delete-btn{
+    position: absolute;
+    bottom: 5px;
+    right: 5px;
+    background: transparent;
+    border: none;
+    color:white;
+    opacity: 0.6;
+    cursor: pointer;
+  }
+
+  #delete-btn:hover {
+    opacity: 1;
+  }
+
+  #temp-unit{
+    position: absolute;
+    bottom: 5px;
+    left: 5px;
+    background-color: transparent;
+    color: white;
+    opacity: 0.6;
+    border-color: white;
+    border-radius: 5px;
+  }
+  #temp-unit:hover {
+    opacity: 1;
+    cursor: pointer;
+  }
